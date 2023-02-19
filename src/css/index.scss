@@ -26,13 +26,16 @@ html, body {
     }
 
     .todolist-wrapper {
-        width: 100%;
-        padding: 0 20px;
-        margin: 0 auto;
+        padding: 0 5px;
         background-color: $todolist-background-color;
         box-shadow: 3px 4px 5px 0px rgba(0,0,0,0.25);
 
         // https://www.cssmatic.com/box-shadow
+
+        @media screen and (min-width: 768px) {
+            width: 80%;
+            margin: 0 auto;
+        }
 
         .new-todo {
             margin: 0;
@@ -101,7 +104,7 @@ html, body {
                     height: 30px;
                     margin-right: 10px;
                     cursor: pointer;
-                    visibility: hidden;
+                    //visibility: hidden;
                     background: url('../images/delete.png') center no-repeat;
                     background-size: 90%;
                 }
