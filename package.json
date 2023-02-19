@@ -8,7 +8,7 @@
     "build": "npm-run-all clean parcel:build",
     "start": "node src/server.js",
     "parcel:dev": "parcel serve src/index.html --open",
-    "parcel:build": "parcel build src/index.html --public-url /static",
+    "parcel:build": "parcel build src/index.html --public-url ./",
     "clean": "rimraf dist .parcel-cache"
   },
   "author": "utopia-code",
@@ -35,5 +35,6 @@
     "express": "^4.18.2",
     "express-static-gzip": "^2.1.7",
     "jquery": "^3.6.3"
-  }
+  },
+  "_comment": "start parcel:build -> parcel build src/index.html --public-url /static"
 }
