@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Application</title>
+</head>
+<body>
+    
+    <picture>
+        <source type="image/avif" srcset="./images/header-image.jpg?as=avif">
+        <source type="image/webp" srcset="./images/header-image.jpg?as=webp">
+        <source type="image/jpeg" srcset="./images/header-image.jpg">
+        <img class="header-image" src="./images/header-image.jpg" alt="To Do List">
+    </picture>
+    <h1>To Do List</h1>
+    <div class="todolist-wrapper">
+        <input class="new-todo" placeholder="Enter text here" autofocus />
+        <ul class="todo-list"></ul>
+    </div>
+    
+    <!-- Modal -->
+    <div class="modal fade" id="modal-delete-todo" tabindex="-1" role="dialog" aria-labelledby="modalDeleteTodo" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                Do you really want to delete this todo item?
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">No</button>
+            <button id="modal-delete-button" type="button" class="btn btn-primary">Yes</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script type="module" src="./js/index.js"></script>
+</body>
+</html>
